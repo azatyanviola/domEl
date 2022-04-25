@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hour {
+          color: red
+        }
+    
+        .min {
+          color: green
+        }
+    
+        .sec {
+          color: blue
+        }
+
+        table {
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+      padding: 3px;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #E6E6E6;
+    }
+      </style>
+
+</head>
+<body>
+   <h5>My Calendar</h5>
+    <div id="calendar" > </div>
+
+    <h5>My Search form</h5>
+    <form name="search">
+        <label>
+            Search here!
+            <input type="search" name="search"  placeholder="Input the text">
+            <input type="submit" value="Search">
+        </label>
+    </form>
+
+    <form name="search-person">
+        "Search the visitors"
+      <table>
+        <tbody>
+          <tr>
+           <td> Age </td>
+           <td id="age-list">
+             <label>
+               <input type="radio" name="age">
+                    "less than 18"
+             </label>
+             <label>
+               <input type="radio" name="age">
+                    "18 - 50"
+             </label>
+             <label>
+               <input type="radio" name="age">
+                   "more than 50"
+             </label>
+          </td>
+        </tr>
+        <tr>
+          <td> Aditionalli </td>
+          <td>
+            <input type="text" name="info[0]">
+            <input type="text" name="info[1]">
+            <input type="text" name="info[2]">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+        
+    <input type="submit" name="serach">
+  </form>
+
+
+
+   <h5>My Clock</h5>
+   <div id="clock">
+        <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+   </div>
+
+   <!-- when cklick on button start clockStart() -->
+   <input type="button" onclick="clockStart()" value="Start">
+
+   <!-- when cklick on button clockStop() -->
+   <input type="button" onclick="clockStop()" value="Stop">
+
+
+
+  <h4>My Object Tree</h4>
+  <div id="container"></div>
+
+
+  <div data-widget-name="menu">Choose the genre</div>
+
+  <script src="main11.js"></script>
+
+
+    
+  </body>
+</html>
